@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** External Modules **/
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/** Internal Modules **/
+/** Components */
+import Main from './containers/Main/Main';
+import Layout from './HOC/Layout/Layout'
+
+/** CSS */
+import classes from './App.module.css';
+
+/** Source **/
+class App extends Component {
+
+    componentDidMount() {
+        console.log('[App Component] did mount');
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('[App Component] before update');
+        return true;
+    }
+
+    componentDidUpdate() {
+        console.log('[App Component] did update');
+    }
+
+    render() {
+        return (
+            <div className={ classes.App } >
+                <Layout>
+                    <Main />
+                </Layout>
+            </div>
+        );
+    }
 }
 
+/** Exports **/
 export default App;
