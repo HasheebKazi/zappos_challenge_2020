@@ -17,17 +17,17 @@ class Layout extends Component {
         return (
             <div className={ classes.MainWrapper }>
 
-                <header style={{ fontSize: '' }}>
+                {/* <header>
                     ...header
-                </header>
+                </header> */}
                 
                 <main> 
                     { this.props.children } 
                 </main>
                 
-                <footer>
+                {/* <footer>
                     ...footer
-                </footer>
+                </footer> */}
             
             </div>
         );
