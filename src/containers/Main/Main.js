@@ -43,7 +43,6 @@ class Main extends Component {
             console.log('here')
             currentScreen = (
                 <React.Fragment>
-                    <h1> Emoji Game </h1>
                     <GameBox />
                 </React.Fragment>
             )

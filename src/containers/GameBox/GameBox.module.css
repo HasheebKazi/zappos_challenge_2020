@@ -1,0 +1,62 @@
+.GameBox {
+    width: 80%;
+    margin: 100px auto;
+
+
+    font-size: 3rem;
+    border: 5px solid black;
+    box-shadow: 3px 3px 3px grey;
+}
+
+.GameBox__Input {
+    padding: 2px;
+    margin: 2rem auto;
+    
+    border: none;
+    border-bottom: 3px solid blue;
+    
+    font-size: 2rem;
+    text-align: center;
+}
+
+.GameBox__Input:focus,
+.GameBox__Input:hover {
+    outline: none;
+}
+
+
+.GameBox button {
+    width: 100px;
+    padding: 10px;
+    
+    font-size: 1.5rem;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+
+    border: 2px solid black;
+    background-color: white;
+
+    box-shadow: 2px 2px 2px black;
+}
+
+.GameBox button:hover {
+    cursor: pointer;
+    outline: none;
+
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+    
+    border: 2px solid black;
+}
+
+.GameBox button:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.GameBox__Controls {
+    margin: 30px 10px;
+}
